@@ -16,7 +16,7 @@ gem "puma",            "5.6.4"
 gem "bootsnap",        "1.12.0", require: false
 gem "jquery-rails"
 gem "jquery-ui-rails"
-gem "bootstrap"
+#gem "bootstrap"
 
 
 group :development, :test do
