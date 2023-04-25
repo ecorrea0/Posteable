@@ -12,6 +12,10 @@ module SampleApp
     config.load_defaults 7.0
     config.assets.initialize_on_precompile = false
     config.active_storage.variant_processor = :mini_magick
+
+    # Include the authenticity token in remote forms
+    config.action_view.embed_authenticity_token_in_remote_forms = true
+
     #config.active_record.verify_foreign_keys_for_fixtures = false
 
     # Configuration for the application, engines, and railties goes here.
