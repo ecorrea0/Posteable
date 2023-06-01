@@ -1,12 +1,12 @@
 # Create a main sample user.
-User.create!(name: "Example User", email: "example@railstutorials.org",
+User.create!(name: "Admin user", email: "admin@posteable.com",
             password: "foobar", password_confirmation: "foobar", admin: true,
             activated: true, activated_at: Time.zone.now)
 
 # Generate a bunch of additional users.
-99.times do |n|
+40.times do |n|
     name = Faker::Name.name
-    email = "example-#{n+1}@railstutorials.org"
+    email = "example-#{n+1}@posteable.com"
     password = "password"
     User.create!(name: name, email: email, password: password, 
                 password_confirmation: password,
@@ -19,6 +19,7 @@ users = User.order(:created_at).take(6)
     content = Faker::Lorem.sentence(word_count: 5)
     users.each {|user| user.microposts.create!(content: content)}
 end
+
 
 # Create following relationships
 users = User.all
