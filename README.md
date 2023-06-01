@@ -1,6 +1,6 @@
 # README
 
-This is the sample application, an app made following: [*Ruby on Rails Tutorial: Learn Web Development with Rails*](https://www.railstutorial.org/)
+This is an app based on [*Ruby on Rails Tutorial: Learn Web Development with Rails*](https://www.railstutorial.org/)
 
 * Ruby version: 3.1.3
 * Rails version: 7.0.4
